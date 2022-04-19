@@ -42,7 +42,7 @@ function calculoGeral() {
     const numeroDeAdultos =  document.querySelector('#inp-adultos');
     const numeroDeCriancas = document.querySelector('#inp-criancas');
     const duracaoDoChurrasco = document.querySelector('#inp-duracao');
-    const espacoDoResultado = document.querySelector('#resultado');
+    const espacoDoResultado = document.querySelector('.resultado');
 
     let quantidadeDeCarne = calculaCarne(numeroDeAdultos.value, numeroDeCriancas.value, duracaoDoChurrasco.value);
     let quantidadeDeCerveja = calculaCerveja(numeroDeAdultos.value, duracaoDoChurrasco.value);

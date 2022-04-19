@@ -3,16 +3,28 @@
     padding: 0;
 }
 
-body {
+.container {
+    background: url(../images/churras.jpg);
+    background-size: cover;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.container {
-    max-width: 300px;
-    margin: auto;
-    background-color: mediumslateblue;
+.box {
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+    float: right;
+    background-color: #FFFFFFBB;
     padding: 24px;
-    color: white;
+}
+
+.resultado {
+    margin-top: 10px;
 }
 
 input {
@@ -31,6 +43,3 @@ button {
     padding: 5px;
 }
 
-#resultado {
-    margin-top: 10px;
-}
