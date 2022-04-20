@@ -8,18 +8,20 @@
     <link rel="icon" href="./assets/images/favicon.png">
 </head>
 <body>
-    <main class="container">
-        <div class="box">
-            <section class="formulario">
-                <h1>Churrascômetro</h1>
-                <input id="inp-adultos" type="number" placeholder="Adultos" name="adultos">
-                <input id="inp-criancas" type="number" placeholder="Crianças" name="crianças">
-                <input id="inp-duracao" type="number" placeholder="Duração (h)" name="duração">
-                <button onclick="calculoGeral()">Calcular</button>
-            </section>
-            <section class="resultado"></section>
+    <p class="informativo">Preencha as informações, e te indicaremos uma lista de compras ideal para o seu churrasco.</p>
+    <div class="main">
+        <div class="formulario">
+            <h1>Churrascômetro</h1>
+            <label for="inp-adultos">1. Quantos adultos?</label>
+            <input id="inp-adultos" type="number" placeholder="Adultos" name="adultos">
+            <label for="inp-criancas">2. Quantas crianças?</label>
+            <input id="inp-criancas" type="number" placeholder="Crianças" name="crianças">
+            <label for="inp-duracao">3. Qual a duração do churrasco?</label>
+            <input id="inp-duracao" type="number" placeholder="Duração (h)" name="duração">
+            <button onclick="calculoGeral()">Calcular</button>
         </div>
-    </main>
+        <div class="resultado"></div>
+    </div>
 
     <script src="./assets/js/script.js"></script>
 </body>

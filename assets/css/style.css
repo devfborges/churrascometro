@@ -3,43 +3,82 @@
     padding: 0;
 }
 
-.container {
+body {
+    box-sizing: border-box;
+    height: 100vh;
     background: url(../images/churras.jpg);
     background-size: cover;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
-    box-sizing: border-box;
 }
 
-.box {
-    width: 30%;
-    height: 100%;
+.main {
     box-sizing: border-box;
-    float: right;
-    background-color: #FFFFFFBB;
+    width: 40%;
+    height: 100%;
+    float: left;
+    background-color: rgba(110,0,0,0.5);
     padding: 24px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.informativo {
+    max-width: 300px;
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    left: 45%;
+    top: 10%;
 }
 
 .resultado {
-    margin-top: 10px;
+    margin: auto;
+    margin-top: 50px;
+    width: fit-content;
 }
 
-input {
+.resultado p {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.formulario label {
     display: block;
-    margin-bottom: 10px;
-    padding: 5px;
-    width: 100%;
-    box-sizing: border-box;
+    font-size: 1.2rem;
 }
 
-h1 {
-    margin-bottom: 10px;
+.formulario h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
 }
 
-button {
+.formulario input {
+    margin: 10px;
     padding: 5px;
+    width: 60%;
+    height: 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+.formulario button {
+    margin: auto;
+    margin-top: 15px;
+    display: block;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+}
+.formulario button:hover {
+    cursor: pointer;
+    background-color: rgb(150, 0, 0);
+    color: white;
+    transition: 0.5s;
 }
 
