@@ -48,7 +48,20 @@ function calculoGeral() {
     let quantidadeDeCerveja = calculaCerveja(numeroDeAdultos.value, duracaoDoChurrasco.value);
     let quantidadeDeBebida = calculaBebida(numeroDeAdultos.value, numeroDeCriancas.value, duracaoDoChurrasco.value);
 
-    espacoDoResultado.innerHTML = `<p>${quantidadeDeCarne} Kg de carne</p>`
-    espacoDoResultado.innerHTML += `<p>${quantidadeDeCerveja} Latas de cerveja com 350ml</p>`
-    espacoDoResultado.innerHTML += `<p>${quantidadeDeBebida} Garrafas de 1L - Refrigerante / Água</p>`
+    espacoDoResultado.innerHTML = `<tr>
+                                        <th>Produto</th>
+                                        <th>Qnt</th>
+                                    </tr>`
+    espacoDoResultado.innerHTML += `<tr>
+                                        <td>Carne</td>
+                                        <td>${quantidadeDeCarne}Kg</td>
+                                    </tr>`
+    espacoDoResultado.innerHTML += `<tr>
+                                        <td>Latas de cerveja (350ml)</td>
+                                        <td>${quantidadeDeCerveja}</td>
+                                    </tr>`
+    espacoDoResultado.innerHTML += `<tr>
+                                        <td>Garrafas de refrigerante (1L)</td>
+                                        <td>${quantidadeDeBebida}</td>
+                                    </tr>`
 }

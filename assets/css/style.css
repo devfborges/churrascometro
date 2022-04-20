@@ -34,14 +34,17 @@ body {
 }
 
 .resultado {
-    margin: auto;
-    margin-top: 50px;
-    width: fit-content;
+    margin-top: 100px;
+    width: 100%;
 }
 
-.resultado p {
-    margin-bottom: 10px;
+.resultado tr {
     text-align: left;
+}
+
+.resultado td {
+    height: 30px;
+    vertical-align: bottom;
 }
 
 .formulario label {
